@@ -1,4 +1,4 @@
-# <div align="center">Library API System using HTML,CSS,PHP</div>
+# <div align="center">Library API System</div>
 
 ## 🔧 Wymagania
 
@@ -41,5 +41,27 @@
   - PHPUnit: Unit testing
   - Cypress: Frontend testing
   - K6: API Performance testing
+
+### PHPUnit Test
+
+```bash
+php vendor/bin/phpunit --testdox tests/BookRepositoryTest.php
+
+php vendor/bin/phpunit --testdox tests/AuthorRepositoryTest.php
+```
+
+### Cypress Test
+
+```bash
+npx cypress open
+```
+
+### K6 Test
+
+```bash
+k6 run k6_test.js
+```
+
+
 
 
