@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteBase /biblioteka/
+
+RewriteRule ^book$ /biblioteka/books/book_list.php [L]
+RewriteRule ^book/([0-9]+)/details$ /biblioteka/books/book_details.php?id=$1 [L]
+RewriteRule ^book/([0-9]+)$ /biblioteka/books/book_view.php?id=$1 [L]
+RewriteRule ^book/addBook$ /biblioteka/books/book_add.php [L]
+RewriteRule ^book/updateBook/([0-9]+)$ /biblioteka/books/book_edit.php?id=$1 [L]
+RewriteRule ^book/deleteBook/([0-9]+)$ /biblioteka/books/book_delete.php?id=$1 [L]
+
+RewriteRule ^author$ /biblioteka/authors/author_list.php [L]
+RewriteRule ^author/addAuthor$ /biblioteka/authors/author_add.php [L]
+RewriteRule ^author/([0-9]+)/details$ /biblioteka/authors/author_details.php?id=$1 [L]
+RewriteRule ^author/([0-9]+)$ /biblioteka/authors/author_view.php?id=$1 [L]
+RewriteRule ^author/updateAuthor/([0-9]+)$ /biblioteka/authors/author_edit.php?id=$1 [L]
+RewriteRule ^author/deleteAuthor/([0-9]+)$ /biblioteka/authors/author_delete.php?id=$1 [L]
