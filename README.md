@@ -33,8 +33,7 @@
 * Usuwanie autorów
 
 
-## 🧪 Technologies Used
-
+## 🧪 Technologie
 - **Backend:** PHP
 - **Database:** MySQL
 - **Testing:**
